@@ -1,38 +1,136 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html{
+  font-size: 62.5%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.container{
+  width: 60%;
+  margin: 2rem auto;
+  padding-top: 3rem;
   min-height: 100vh;
+}
+h2{
+  text-align: center;
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+form{
+  margin: 1rem auto;
+  padding: 1.5rem;
+  width: 75%;
+  border: 1px solid grey;
+  position: relative;
+}
+input{
+  display: block;
+  width: 95%;
+  margin: 0 auto;
+  padding: 0.5rem 0 0.5rem 3rem;
+}
+input:focus{
+  border: 1.5px solid green;
+  outline: blue;
+}
+.span{
+  position: absolute;
+  top: 1.7rem;
+  left: 3rem;
+  font-size: 2rem;
+  color: blue;
+}
+button{
+  display: block;
+  width: 95%;
+  margin: 1rem auto;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  background-color: #8B78E6;
+  color: #ffffff;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+}
+.btn{
+  background-color: rgb(235, 45, 39);
+  color: #ffffff;
+  width: 69%;
+  cursor: pointer;
+
+}
+ul{
+  width: 75%;
+  margin: 0 auto;
+  padding: 0 2.5rem;
+}
+li{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 1rem;
+  padding: 0.7rem;
+  border: 1px solid grey;
 }
 
-.App-link {
-  color: #61dafb;
+.text{
+  font-size: 1.5rem;
+}
+.edit{
+  font-size: 1.7rem;
+  color: green;
+  padding: 0 0.5rem;
+  cursor: pointer;
+}
+.delete{
+  color: red;
+  font-size: 1.7rem;
+  padding: 0 0.5rem;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Media queries */
+/* media for 400px */
+@media screen and (max-width: 600px) {
+    .container{
+      width: 100%;
+    }
+    form{
+      width: 90%;
+    }
+    input{
+      font-size: 1.6rem;
+    }
+    .span{
+      top: 2rem;
+    }
+    ul{
+      width: 95%;
+    }
+    button{
+      font-size: 1.4rem;
+      padding-top: 0.4rem;
+      padding-bottom: 0.4rem;
+    }
+    .btn{
+      width: 75%;
+    }
+    .text{
+      font-size: 2.1rem;
+     
+    }
+    .edit, .delete{
+      font-size: 2.3rem;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+  .container{
+    width: 70%;
+  } 
+  button{
+    font-size: 1.7rem;
   }
-  to {
-    transform: rotate(360deg);
-  }
+ 
 }
